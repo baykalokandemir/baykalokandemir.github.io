@@ -16,14 +16,17 @@
   margin: 0;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
   background-color: var(--main);
   grid-gap: 10rem;
   height: 100%;
-  width: 100vw;
-  height: 100vh;
 }
 
 .card {
