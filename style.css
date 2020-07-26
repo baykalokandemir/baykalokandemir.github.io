@@ -85,12 +85,14 @@
 
 .btn-large:hover {
   box-shadow: 0px 0px 10px #03ff82;
-  background-position: center
+  background-position: center;
+  cursor: pointer;
 }
 
 .btn-large:active {
   background-position: right center;
   box-shadow: 0px 0px 10px rgba(3, 255, 130. .5);
+  cursor: pointer;
 }
 
 .other-btn {
