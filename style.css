@@ -17,16 +17,16 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.container {
+.wrapper {
   display: grid;
   grid-template-columns: 1fr;
   background-color: var(--main);
   grid-gap: 10rem;
-  height: 100%;
+  min-height: 100vh;
+  padding: 5rem;
 }
 
 .card {
@@ -38,10 +38,11 @@ body {
   height: 100%;
   max-width: 26rem;
   max-height: 40rem;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   box-shadow:  2rem 2rem 4rem #080808, 
               -2rem -2rem 4rem #202020;
   transition: 0.3s;
+
 }
 
 .card:hover {
@@ -150,3 +151,51 @@ body {
   box-shadow: 0px 0px 10px #D33C30;
 }
 
+@media (max-width: 580px) {
+  .wrapper {
+    grid-gap: 5rem;
+    padding: 2rem;
+  }
+  
+  .card {
+    max-width: 19.5rem;
+    max-height: 30rem;
+    border-radius: 1.5rem;
+    box-shadow:  1.5rem 1.5rem 3rem #080808, 
+                -1.5rem -1.5rem 3rem #202020;
+  
+  }
+  
+  .card h1 {
+    padding-bottom: .6em;
+    font-size: 1.65em;
+  }
+  
+  .card h4 {
+    padding-bottom: .6em;
+  }
+  
+  .pp {
+    max-width: 10rem;
+  }
+
+  .btn-large {
+    height: 2.25rem;
+    width: 12rem;
+    border-radius: 1.125rem;
+    font-size: 1.15rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .other-btn {
+    grid-gap: 2rem;
+  }
+  
+  .btn-small {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 1.125rem;
+    font-size: 1rem;
+  }
+  
+}
