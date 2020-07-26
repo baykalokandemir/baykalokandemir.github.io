@@ -2,6 +2,8 @@
 
 :root {
   --main: #D5E3F0;
+  --shadow: #808890;
+  --light: #FFFFFF;
 }
 
 * {
@@ -33,14 +35,14 @@ body {
   margin: auto;
   display: grid;
   grid-template-rows: 20fr 4fr 6fr 6fr 4fr;
-  background: var(--main);
+  background: linear-gradient(-45deg, rgba(0,0,0,0.1), rgba(255,255,255,0.05));
   width: 100%;
   height: 100%;
   max-width: 26rem;
   max-height: 40rem;
   border-radius: 1.5rem;
-  box-shadow:  -2rem -2rem 4rem #ffffff, 
-                2rem 2rem 4rem #c2c8d0;
+  box-shadow:  -2rem -2rem 4rem var(--light), 
+                2rem 2rem 4rem var(--shadow);
   transition: 0.3s;
 
 }
@@ -86,8 +88,8 @@ body {
   transition: 0.3s;
   background-size: 200% auto;
   background: var(--main);
-  box-shadow:  0.5rem 0.5rem 2rem #808890, 
-               -0.5rem -0.5rem 2rem #ffffff;
+  box-shadow:  0.5rem 0.5rem 2rem var(--shadow), 
+               -0.5rem -0.5rem 2rem var(--light);
   font-size: 1.35rem;
   font-weight: 700;
   color: #6b798b;
@@ -96,8 +98,8 @@ body {
 }
 
 .btn-large:hover {
-  box-shadow:  0.5rem 0.5rem 1rem #808890, 
-               -0.5rem -0.5rem 1rem #ffffff;
+  box-shadow:  0.5rem 0.5rem 1rem var(--shadow), 
+               -0.5rem -0.5rem 1rem var(--light);
   background-position: center;
   cursor: pointer;
   transform: scale(1.015);
@@ -105,8 +107,8 @@ body {
 
 .btn-large:active {
   background-position: right center;
-  box-shadow:  0.5rem 0.5rem 1.1rem #808890, 
-              -0.5rem -0.5rem 1.1rem #ffffff;
+  box-shadow:  0.5rem 0.5rem 1.1rem var(--shadow), 
+              -0.5rem -0.5rem 1.1rem var(--light);
   cursor: pointer;
   transform: scale(1.007);
 }
@@ -142,22 +144,22 @@ body {
 .btn-github {
   color:#634C85;
   background: var(--main);
-  box-shadow: inset 3px 3px 6px #808890, 
-              inset -3px -3px 6px #ffffff;
+  box-shadow: inset 3px 3px 6px var(--shadow), 
+              inset -3px -3px 6px var(--light);
 }
 
 .btn-linkedin {
   color: #006BA3;
   background: var(--main);
-  box-shadow: inset 3px 3px 6px #808890, 
-              inset -3px -3px 6px #ffffff;
+  box-shadow: inset 3px 3px 6px var(--shadow), 
+              inset -3px -3px 6px var(--light);
 }
 
 .btn-gmail {
   color: #D33C30;
   background: var(--main);
-  box-shadow: inset 3px 3px 6px #808890, 
-              inset -3px -3px 6px #ffffff;
+  box-shadow: inset 3px 3px 6px var(--shadow), 
+              inset -3px -3px 6px var(--light);
 }
 
 @media (max-width: 580px) {
@@ -170,8 +172,8 @@ body {
     max-width: 19.5rem;
     max-height: 30rem;
     border-radius: 1.5rem;
-    box-shadow:  1.5rem 1.5rem 3rem #c2c8d0, 
-                -1.5rem -1.5rem 3rem #ffffff;
+    box-shadow:  1.5rem 1.5rem 3rem var(--shadow), 
+                -1.5rem -1.5rem 3rem var(--light);
   
   }
   
