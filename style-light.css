@@ -86,7 +86,7 @@ body {
   transition: 0.3s;
   background-size: 200% auto;
   background: var(--main);
-  box-shadow:  0.5rem 0.5rem 2rem #898d93, 
+  box-shadow:  0.5rem 0.5rem 2rem #808890, 
                -0.5rem -0.5rem 2rem #ffffff;
   font-size: 1.35rem;
   font-weight: 700;
@@ -96,7 +96,7 @@ body {
 }
 
 .btn-large:hover {
-  box-shadow:  0.5rem 0.5rem 1rem #898d93, 
+  box-shadow:  0.5rem 0.5rem 1rem #808890, 
                -0.5rem -0.5rem 1rem #ffffff;
   background-position: center;
   cursor: pointer;
@@ -105,7 +105,7 @@ body {
 
 .btn-large:active {
   background-position: right center;
-  box-shadow:  0.5rem 0.5rem 1.1rem #898d93, 
+  box-shadow:  0.5rem 0.5rem 1.1rem #808890, 
               -0.5rem -0.5rem 1.1rem #ffffff;
   cursor: pointer;
   transform: scale(1.007);
@@ -123,7 +123,7 @@ body {
   height: 3rem;
   border-radius: 1rem;
   margin: auto;
-  color: #FFFFFF;
+  color: #D5E3F0;
   font-size: 1.4rem;
 }
 
@@ -142,21 +142,21 @@ body {
 .btn-github {
   color:#634C85;
   background: var(--main);
-  box-shadow: inset 3px 3px 6px #898d93, 
+  box-shadow: inset 3px 3px 6px #808890, 
               inset -3px -3px 6px #ffffff;
 }
 
 .btn-linkedin {
   color: #006BA3;
   background: var(--main);
-  box-shadow: inset 3px 3px 6px #898d93, 
+  box-shadow: inset 3px 3px 6px #808890, 
               inset -3px -3px 6px #ffffff;
 }
 
 .btn-gmail {
   color: #D33C30;
   background: var(--main);
-  box-shadow: inset 3px 3px 6px #898d93, 
+  box-shadow: inset 3px 3px 6px #808890, 
               inset -3px -3px 6px #ffffff;
 }
 
