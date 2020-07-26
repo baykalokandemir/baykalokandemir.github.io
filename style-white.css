@@ -16,17 +16,16 @@
   margin: 0;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-}
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
   background-color: var(--main);
   grid-gap: 10rem;
+  max-width: 100vw;
+  max-height: 100vh;
   height: 100%;
+  width: 100%;
 }
 
 .card {
@@ -119,34 +118,62 @@ body {
   height: 3rem;
   border-radius: 1.5rem;
   margin: auto;
-  color: #FFFFFF;
   font-size: 1.4rem;
-}
-
-.btn-small:hover {
-  background-position: center;
-  cursor: pointer;
-  transform: scale(1.015);
-}
-
-.btn-small:active {
-  background-position: right center;
-  cursor: pointer;
-  transform: scale(1.007);
 }
 
 .btn-github {
   background-image: linear-gradient(145deg, #765A9E 0%, #634C85 44%, #634C85 56%, #765A9E 100%);
   box-shadow: 0px 0px 10px #634C85;
+  background-size: 200% auto;
+  transition: 0.3s;
 }
 
 .btn-linkedin {
   background-image: linear-gradient(145deg, #007FC2 0%, #006BA3 44%, #006BA3 56%, #007FC2 100%);
   box-shadow: 0px 0px 10px #006BA3;
+  background-size: 200% auto;
+  transition: 0.3s;
 }
 
 .btn-gmail {
   background-image: linear-gradient(145deg, #FA4839 0%, #D33C30 44%, #D33C30 56%, #FA4839 100%);
   box-shadow: 0px 0px 10px #D33C30;
+  background-size: 200% auto;
+  transition: 0.3s;
 }
 
+.btn-github:hover {
+  background-position: center;
+  cursor: pointer;
+  transform: scale(1.015);
+}
+
+.btn-github:active {
+  background-position: right center;
+  cursor: pointer;
+  transform: scale(1.007);
+}
+
+.btn-linkedin:hover {
+  background-position: center;
+  cursor: pointer;
+  transform: scale(1.015);
+}
+
+.btn-linkedin:active {
+  background-position: right center;
+  cursor: pointer;
+  transform: scale(1.007);
+}
+
+.btn-gmail:hover {
+  background-position: center;
+  cursor: pointer;
+  transform: scale(1.015);
+}
+
+.btn-gmail:active {
+  background-position: right center;
+  cursor: pointer;
+  transform: scale(1.007);
+}
