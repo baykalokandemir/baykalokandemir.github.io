@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 :root {
-  --main: #141414;
+  --main: #D5E3F0;
 }
 
 * {
@@ -33,14 +33,14 @@ body {
   margin: auto;
   display: grid;
   grid-template-rows: 20fr 4fr 6fr 6fr 4fr;
-  background-color: var(--main);
+  background: var(--main);
   width: 100%;
   height: 100%;
   max-width: 26rem;
   max-height: 40rem;
   border-radius: 1.5rem;
-  box-shadow:  2rem 2rem 4rem #080808, 
-              -2rem -2rem 4rem #202020;
+  box-shadow:  2rem 2rem 4rem #ffffff, 
+              -2rem -2rem 4rem #c2c8d0;
   transition: 0.3s;
 
 }
@@ -52,26 +52,26 @@ body {
 .card .text {
   display: grid;
   grid-template-rows: 2.5fr 1.5fr;
-  color: white;
+  color: #6b798b;
   margin: auto;
 }
 
 .card h1 {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   padding-bottom: .2em;
 }
 
 .card h4 {
   margin: auto;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 .pp {
   max-width: 14rem;
   margin: auto;
   border-radius: 50%;
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
 .resume-container {
@@ -81,21 +81,23 @@ body {
 .btn-large {
   height: 3rem;
   width: 16rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   margin: auto;
   transition: 0.3s;
   background-size: 200% auto;
-  box-shadow: 0px 0px 10px #03ff82;
-  background-image: linear-gradient(145deg, #23B738 0%, #177724 44%, #177724 56%, #23B738 100%);
+  background: var(--main);
+  box-shadow:  0.5rem 0.5rem 2rem #898d93, 
+               -0.5rem -0.5rem 2rem #ffffff;
   font-size: 1.35rem;
-  font-weight: 600;
-  color: aliceblue;
+  font-weight: 700;
+  color: #6b798b;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
 
 .btn-large:hover {
-  box-shadow: 0px 0px 10px #03ff82;
+  box-shadow:  0.5rem 0.5rem 1rem #898d93, 
+               -0.5rem -0.5rem 1rem #ffffff;
   background-position: center;
   cursor: pointer;
   transform: scale(1.015);
@@ -103,7 +105,8 @@ body {
 
 .btn-large:active {
   background-position: right center;
-  box-shadow: 0px 0px 10px rgba(3, 255, 130. .5);
+  box-shadow:  0.5rem 0.5rem 1.1rem #898d93, 
+              -0.5rem -0.5rem 1.1rem #ffffff;
   cursor: pointer;
   transform: scale(1.007);
 }
@@ -118,7 +121,7 @@ body {
 .btn-small {
   width: 3rem;
   height: 3rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   margin: auto;
   color: #FFFFFF;
   font-size: 1.4rem;
@@ -137,18 +140,24 @@ body {
 }
 
 .btn-github {
-  background-image: linear-gradient(145deg, #765A9E 0%, #634C85 44%, #634C85 56%, #765A9E 100%);
-  box-shadow: 0px 0px 10px #634C85;
+  color:#634C85;
+  background: var(--main);
+  box-shadow: inset 3px 3px 6px #898d93, 
+              inset -3px -3px 6px #ffffff;
 }
 
 .btn-linkedin {
-  background-image: linear-gradient(145deg, #007FC2 0%, #006BA3 44%, #006BA3 56%, #007FC2 100%);
-  box-shadow: 0px 0px 10px #006BA3;
+  color: #006BA3;
+  background: var(--main);
+  box-shadow: inset 3px 3px 6px #898d93, 
+              inset -3px -3px 6px #ffffff;
 }
 
 .btn-gmail {
-  background-image: linear-gradient(145deg, #FA4839 0%, #D33C30 44%, #D33C30 56%, #FA4839 100%);
-  box-shadow: 0px 0px 10px #D33C30;
+  color: #D33C30;
+  background: var(--main);
+  box-shadow: inset 3px 3px 6px #898d93, 
+              inset -3px -3px 6px #ffffff;
 }
 
 @media (max-width: 580px) {
@@ -161,8 +170,8 @@ body {
     max-width: 19.5rem;
     max-height: 30rem;
     border-radius: 1.5rem;
-    box-shadow:  1.5rem 1.5rem 3rem #080808, 
-                -1.5rem -1.5rem 3rem #202020;
+    box-shadow:  1.5rem 1.5rem 3rem #c2c8d0, 
+                -1.5rem -1.5rem 3rem #ffffff;
   
   }
   
@@ -182,7 +191,7 @@ body {
   .btn-large {
     height: 2.25rem;
     width: 12rem;
-    border-radius: 1.125rem;
+    border-radius: 0.75rem;
     font-size: 1.15rem;
     letter-spacing: 0.1rem;
   }
@@ -194,7 +203,7 @@ body {
   .btn-small {
     width: 2.25rem;
     height: 2.25rem;
-    border-radius: 1.125rem;
+    border-radius: 0.75rem;
     font-size: 1rem;
   }
   
