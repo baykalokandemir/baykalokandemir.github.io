@@ -39,8 +39,8 @@ body {
   max-width: 26rem;
   max-height: 40rem;
   border-radius: 1.5rem;
-  box-shadow:  2rem 2rem 4rem #ffffff, 
-              -2rem -2rem 4rem #c2c8d0;
+  box-shadow:  -2rem -2rem 4rem #ffffff, 
+                2rem 2rem 4rem #c2c8d0;
   transition: 0.3s;
 
 }
