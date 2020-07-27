@@ -10,7 +10,7 @@
   padding: none;
   border: none;
   outline: none;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-weight: 500;
   text-rendering: geometricPrecision;
   box-sizing: border-box;
@@ -60,13 +60,14 @@ body {
 
 .card h1 {
   text-transform: uppercase;
-  font-weight: 500;
-  padding-bottom: .2em;
+  font-weight: 700;
+  padding-bottom: .35em;
 }
 
 .card h4 {
   margin: auto;
   font-weight: 400;
+  padding-bottom: .75em;
 }
 
 .pp {
@@ -96,7 +97,7 @@ body {
   box-shadow:  0.5rem 0.5rem 2rem var(--shadow), 
                -0.5rem -0.5rem 2rem var(--light);
   font-size: 1.35rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
@@ -144,21 +145,21 @@ body {
 }
 
 .btn-github {
-  color: #DFDFDF;
+  color:#634C85;
   background: var(--main);
   box-shadow: inset 3px 3px 6px var(--shadow), 
               inset -3px -3px 6px var(--light);
 }
 
 .btn-linkedin {
-  color: #DFDFDF;
+  color: #006BA3;
   background: var(--main);
   box-shadow: inset 3px 3px 6px var(--shadow), 
               inset -3px -3px 6px var(--light);
 }
 
 .btn-gmail {
-  color: #DFDFDF;
+  color: #D33C30;
   background: var(--main);
   box-shadow: inset 3px 3px 6px var(--shadow), 
               inset -3px -3px 6px var(--light);
