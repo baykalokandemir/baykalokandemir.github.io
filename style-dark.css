@@ -10,7 +10,7 @@
   padding: none;
   border: none;
   outline: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 500;
   text-rendering: geometricPrecision;
   box-sizing: border-box;
@@ -60,13 +60,13 @@ body {
 
 .card h1 {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   padding-bottom: .2em;
 }
 
 .card h4 {
   margin: auto;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .pp {
@@ -86,15 +86,17 @@ body {
   border-radius: 1rem;
   margin: auto;
   transition: 0.3s;
-  background-size: 200% auto;
+  /* background-size: 200% auto;
   background: linear-gradient(145deg, #23B738, #177724);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  background-color: var(--main);
+  color: #DFDFDF;
   box-shadow:  0.5rem 0.5rem 2rem var(--shadow), 
                -0.5rem -0.5rem 2rem var(--light);
   font-size: 1.35rem;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
@@ -102,13 +104,11 @@ body {
 .btn-large:hover {
   box-shadow:  0.5rem 0.5rem 1rem var(--shadow), 
                -0.5rem -0.5rem 1rem var(--light);
-  background-position: center;
   cursor: pointer;
   transform: scale(1.015);
 }
 
 .btn-large:active {
-  background-position: right center;
   box-shadow:  0.5rem 0.5rem 1.1rem var(--shadow), 
               -0.5rem -0.5rem 1.1rem var(--light);
   cursor: pointer;
@@ -144,21 +144,21 @@ body {
 }
 
 .btn-github {
-  color:#634C85;
+  color: #DFDFDF;
   background: var(--main);
   box-shadow: inset 3px 3px 6px var(--shadow), 
               inset -3px -3px 6px var(--light);
 }
 
 .btn-linkedin {
-  color: #006BA3;
+  color: #DFDFDF;
   background: var(--main);
   box-shadow: inset 3px 3px 6px var(--shadow), 
               inset -3px -3px 6px var(--light);
 }
 
 .btn-gmail {
-  color: #D33C30;
+  color: #DFDFDF;
   background: var(--main);
   box-shadow: inset 3px 3px 6px var(--shadow), 
               inset -3px -3px 6px var(--light);
